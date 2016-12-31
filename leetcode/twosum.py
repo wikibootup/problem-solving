@@ -19,6 +19,7 @@ class Solution(object):
 
 
 # O(N) by https://github.com/kamyu104/LeetCode/blob/master/Python/two-sum.py
+# idea : it finds the indices by value reversely.
 class Solution(object):
 
     def twoSum(self, nums, target):
