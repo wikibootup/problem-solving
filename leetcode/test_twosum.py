@@ -18,8 +18,10 @@ class TestTwoSum(unittest.TestCase):
         target = 17 + 19
         self.assertListEqual([], self.ts.twoSum(small, target))
 
-    @unittest.skip('too big')
+    # @unittest.skip('too big')
     def test_big(self):
-        small = list(range(200000))
-        target = 179999 + 199999
-        self.assertListEqual([179999, 199999], self.ts.twoSum(small, target))
+        l = list(range(200000))
+        big_value = 9999999
+        l.append(big_value)
+        target = 199995 + big_value
+        self.assertListEqual([199995, 200000], self.ts.twoSum(l, target))
